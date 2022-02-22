@@ -1,0 +1,162 @@
+.section-footer {
+    background: url("../img/footer-img.png");
+    background-color: #f2f2f2;
+    width: 100vw;
+    padding: 7vw 0 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: bottom;
+
+    .section-wrapper {
+        width: 90vw;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin: 8.5vw auto 0;
+        .lists-wrapper {
+            display: flex;
+
+            .first-list {
+                padding-right: 12vw;
+            }
+            .second-list {
+                padding-right: 8vw;
+            }
+
+            .third-list {
+                padding-right: 4vw;
+            }
+
+            .first-list,
+            .second-list,
+            .third-list {
+                li {
+                    font-size: 0.8rem;
+                    line-height: 1.4rem;
+
+                    a {
+                        color: #1e2945;
+                        @media (max-width: 700px) {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                label {
+                    font-weight: 700;
+                }
+
+                li:hover {
+                    font-weight: 700;
+                }
+
+                @media (max-width: 1200px) {
+                    // padding: 0;
+                    width: 33.3%;
+                }
+
+                @media (max-width: 400px) {
+                    flex-basis: fit-content;
+                }
+            }
+            @media (max-width: 700px) {
+                flex-direction: row-reverse;
+            }
+            @media (max-width: 1200px) {
+                width: 100%;
+            }
+        }
+
+        .footer-right-content {
+            display: flex;
+            .social-media {
+                margin-left: 5vw;
+                align-items: center;
+                justify-content: space-between;
+                display: flex;
+                flex-direction: column;
+                .socia-media-wrapper {
+                    display: flex;
+                    a {
+                        background: linear-gradient(316.02deg, #1acbfd -79.1%, #345aff 95.81%);
+                        border-radius: 6px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 38px;
+                        height: 38px;
+                        img {
+                            width: 0.44rem;
+                            height: 0.88rem;
+                        }
+                    }
+                    .vk {
+                        margin: 0 8px;
+                        img {
+                            width: 18px;
+                            height: 10px;
+                        }
+                    }
+                    .twitter {
+                        margin: 0 8px 0 0;
+                        img {
+                            width: 16px;
+                            height: 13px;
+                        }
+                    }
+                    .google-plus {
+                        img {
+                            width: 20px;
+                            height: 12px;
+                        }
+                    }
+                }
+                .solar_logo {
+                    @media (max-width: 1200px) {
+                        display: flex;
+                        margin-left: 20px;
+                    }
+
+                    @media (max-width: 400px) {
+                        display: flex;
+                        margin: 10px 0 0;
+                    }
+                }
+                @media (max-width: 1200px) {
+                    margin: 0;
+                    flex-direction: row;
+                }
+
+                @media (max-width: 400px) {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+
+            .pay-buttons {
+                @media (max-width: 700px) {
+                    min-width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+            }
+
+            @media (max-width: 1200px) {
+                margin-top: 20px;
+                width: 100%;
+                justify-content: space-around;
+            }
+
+            @media (max-width: 700px) {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            flex-wrap: wrap;
+        }
+    }
+    @media (max-width: 1200px) {
+        padding-bottom: 20px;
+    }
+}

@@ -1,0 +1,43 @@
+.bintrade-section {
+    background: #f2f2f2;
+    padding: 14.5vw 0 0;
+
+    h2 {
+        font-size: 2rem;
+        line-height: 2.17rem;
+        width: 90vw;
+        padding: 0 0 2rem;
+        margin: auto;
+
+        @media (max-width: 700px) {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+    }
+
+    .content {
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+
+        p {
+            max-width: 38vw;
+
+            @media (max-width: 700px) {
+                max-width: 100%;
+            }
+        }
+        .first {
+            margin-right: 4vw;
+
+            @media (max-width: 700px) {
+                margin-bottom: 4vw;
+            }
+        }
+
+        @media (max-width: 700px) {
+            flex-direction: column;
+        }
+    }
+}
